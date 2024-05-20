@@ -13,6 +13,8 @@
   --active-color: #ff8f1e;
   --newsletter-bg-color: #2f221c;
   --newsletter-input-color: #d9d9d9;
+
+  --fontSize: 18px;
 }
 
 * {
@@ -24,16 +26,79 @@
 }
 
 body {
-  font-family: var(--Khula);
+  font-family: var(--Poppins);
+  font-size: var(--fontSize);
   background: var(--bg-color);
 }
 
-.initial {
-  width: 80%;
-  height: 100vh;
-  margin: 0 auto;
+ul {
+  list-style: none;
+}
 
-  display: flex;
+a {
+  text-decoration: none;
+}
+
+/* Header */
+header .container {
+  padding: 1rem 0;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
+}
+
+header .brand {
+  transition: transform 1s;
+}
+
+header .brand:hover {
+  transform: scale(1.1);
+}
+
+header ul {
+  gap: 2rem;
+}
+
+header nav a {
+  font-family: var(--Lato);
+
+  position: relative;
+
+  transition: color 0.8s;
+}
+
+header nav a:hover {
+  color: var(--active-color);
+}
+
+header nav a::before,
+.active::before {
+  content: "";
+  width: 0;
+  height: 0.11rem;
+  background: var(--active-color);
+
+  position: absolute;
+  left: 0;
+  bottom: -0.27rem;
+
+  transition: width 1s;
+}
+
+header nav a:hover::before,
+.active::before {
+  width: 100%;
+}
+
+/* Class */
+.active {
+  color: var(--active-color);
+}
+
+.flex-container {
+  display: flex;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
 }
