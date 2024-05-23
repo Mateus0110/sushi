@@ -31,14 +31,6 @@ body {
   background: var(--bg-color);
 }
 
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
 /* Header */
 header .container {
   padding: 1rem 0;
@@ -54,15 +46,35 @@ header .brand:hover {
   transform: scale(1.1);
 }
 
+header .hamburguer {
+  display: none;
+  border: none;
+  background: none;
+  border-top: 3px solid var(--text-color-dark);
+  cursor: pointer;
+}
+
+header .hamburguer::before,
+header .hamburguer::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 3px;
+  background: var(--text-color-dark);
+  margin-top: 5px;
+  position: relative;
+  transition: 0.3s;
+}
+
 header ul {
   gap: 2rem;
+  list-style: none;
 }
 
 header nav a {
   font-family: var(--Lato);
-
   position: relative;
-
+  text-decoration: none;
   transition: color 0.8s;
 }
 
@@ -74,12 +86,12 @@ header nav a::before,
 .active::before {
   content: "";
   width: 0;
-  height: 0.11rem;
+  height: 2px;
   background: var(--active-color);
 
   position: absolute;
   left: 0;
-  bottom: -0.27rem;
+  bottom: -5px;
 
   transition: width 1s;
 }
