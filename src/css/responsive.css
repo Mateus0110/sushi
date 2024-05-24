@@ -26,8 +26,8 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: var(--bg-color);
-    clip-path: circle(100px at 90% -15%);
+    background: var(--bg-color-dark);
+    clip-path: circle(100px at 100% -15%);
     transition: 1s ease-in-out;
     pointer-events: none;
 
@@ -39,7 +39,7 @@
   }
 
   header nav.show ul {
-    clip-path: circle(1500px at 90% -15%);
+    clip-path: circle(1500px at 100% -15%);
     pointer-events: all;
   }
 
