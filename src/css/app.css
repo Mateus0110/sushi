@@ -47,6 +47,10 @@ header .brand:hover {
   transform: scale(1.1);
 }
 
+header .brand img {
+  width: 200px;
+}
+
 header .hamburguer {
   display: none;
   border: none;
