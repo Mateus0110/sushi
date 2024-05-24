@@ -7,7 +7,7 @@
   --KohSantepheap: "Koh Santepheap", sans-serif;
   --Lato: "Lato", sans-serif;
 
-  --bg-color: #fff1eb;
+  --bg-color-light: #fff1eb;
   --bg-color-dark: #f8e3d9;
   --text-color-dark: #2a2521;
   --text-color-light: #fff;
@@ -24,12 +24,12 @@
   padding: 0;
 
   color: var(--text-color-dark);
+  font-family: var(--Poppins);
 }
 
 body {
-  font-family: var(--Poppins);
   font-size: var(--fontSize);
-  background: var(--bg-color);
+  background: var(bg-color-light);
 }
 
 /* Header */
@@ -58,12 +58,12 @@ header .hamburguer {
 header .hamburguer::before,
 header .hamburguer::after {
   content: "";
+  position: relative;
   display: block;
   width: 30px;
   height: 3px;
   background: var(--text-color-dark);
   margin-top: 5px;
-  position: relative;
   transition: 0.3s;
 }
 
@@ -76,15 +76,14 @@ header nav a {
   font-family: var(--Lato);
   position: relative;
   text-decoration: none;
-  transition: color 0.8s;
+  transition: color 0.5s;
 }
 
 header nav a:hover {
   color: var(--active-color);
 }
 
-header nav a::before,
-.active::before {
+header nav a::before {
   content: "";
   width: 0;
   height: 2px;
