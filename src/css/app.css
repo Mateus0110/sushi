@@ -32,7 +32,22 @@ body {
   background: var(bg-color-light);
 }
 
+#app {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "header header"
+    "main main"
+    "footer footer";
+  grid-template-rows: 100px 1fr 200px;
+  gap: 3rem;
+}
+
 /* Header */
+header {
+  grid-area: header;
+}
+
 header .container {
   padding: 1rem 0;
   justify-content: space-between;
