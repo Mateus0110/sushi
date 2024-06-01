@@ -7,7 +7,8 @@
   --KohSantepheap: "Koh Santepheap", sans-serif;
   --Lato: "Lato", sans-serif;
 
-  --bg-color: #f8e3d9;
+  --bg-color-light: #fff1eb;
+  --bg-color-dark: #f8e3d9;
   --text-color-dark: #2a2521;
   --text-color-light: #fff;
   --active-color: #ff8f1e;
@@ -28,7 +29,7 @@
 
 body {
   font-size: var(--fontSize);
-  background: var(--bg-color);
+  background: var(--bg-color-light);
 }
 
 h1,
@@ -44,6 +45,10 @@ p {
 
 p {
   font-size: 1.5rem;
+}
+
+img {
+  width: 100%;
 }
 
 button {

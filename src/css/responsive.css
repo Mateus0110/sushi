@@ -1,4 +1,8 @@
 @media (max-width: 768px) {
+  .noscroll {
+    overflow-y: hidden;
+  }
+
   header .brand img {
     width: 150px;
   }
@@ -9,10 +13,8 @@
   }
 
   header nav.show ~ .hamburguer {
-    position: fixed;
-    top: 36px;
-    right: 16px;
     border-top-color: transparent;
+    z-index: 1;
   }
 
   header nav.show ~ .hamburguer::before {
@@ -77,7 +79,7 @@
   }
 
   .container {
-    width: 90%;
+    width: 85%;
     margin: 0 auto;
   }
 }
