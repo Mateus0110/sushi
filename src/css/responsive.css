@@ -1,6 +1,14 @@
 @media (max-width: 768px) {
+  p {
+    font-size: 1.3rem;
+  }
+
   .noscroll {
     overflow-y: hidden;
+  }
+
+  #app {
+    gap: 2rem;
   }
 
   header .brand img {
@@ -76,6 +84,36 @@
 
   header ul li:nth-child(5) a {
     transition: 0.5s 1s;
+  }
+
+  main #home section {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  main h1 {
+    font-size: 2.5rem;
+  }
+
+  main a {
+    font-size: 1rem;
+  }
+
+  main .text-content {
+    width: 100%;
+    gap: 1rem;
+  }
+
+  main .description {
+    gap: 1.5rem;
+  }
+
+  main .title div {
+    display: none;
+  }
+
+  main .text-content ~ div {
+    display: none;
   }
 
   .container {
