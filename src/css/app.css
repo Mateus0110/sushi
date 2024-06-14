@@ -145,24 +145,42 @@ header nav a:hover::before,
   width: 100%;
 }
 
-main #home section {
-  display: flex;
-  justify-content: space-between;
-}
-
 main {
   grid-area: main;
 
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 8rem;
 }
 
-main h1 {
+main section {
+  display: flex;
+  justify-content: space-between;
+}
+
+main #about section {
+  flex-direction: row-reverse;
+}
+
+main #about .text-content {
+  width: 50%;
+}
+
+main .title-first-variation h1 {
   font-size: 4rem;
 }
 
-main h3 {
+main .title-second-variation h1 {
+  font-family: var(--Khula);
+  color: var(--active-color);
+  font-size: 1.8rem;
+}
+
+main .title-second-variation h3 {
+  font-size: 3rem;
+}
+
+main .title-first-variation h3 {
   font-size: 2.5rem;
 }
 

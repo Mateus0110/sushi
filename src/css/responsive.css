@@ -1,4 +1,10 @@
-@media (max-width: 768px) {
+@media (min-width: 800px) {
+  main .title-second-variation div img {
+    display: block;
+  }
+}
+
+@media (max-width: 991.98px) {
   p {
     font-size: 1.3rem;
   }
@@ -86,12 +92,17 @@
     transition: 0.5s 1s;
   }
 
-  main #home section {
+  main section {
     flex-direction: column;
     gap: 4rem;
   }
 
-  main h1 {
+  main #about section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main .title-first-variation h1 {
     font-size: 2.5rem;
   }
 
@@ -100,7 +111,7 @@
   }
 
   main .text-content {
-    width: 100%;
+    width: 100% !important;
     gap: 1rem;
   }
 
@@ -108,16 +119,22 @@
     gap: 1.5rem;
   }
 
-  main .title div {
-    display: none;
-  }
-
-  main .text-content ~ div {
+  main #home .title div,
+  main .title-second-variation div img {
     display: none;
   }
 
   .container {
     width: 85%;
     margin: 0 auto;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  main .text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
   }
 }
