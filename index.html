@@ -17,7 +17,9 @@
   <body>
     <div id="app">
       <header>
-        <div class="container flex-container">
+        <div
+          class="container flex-container justify-space-between items-center"
+        >
           <a href="index.html" class="brand">
             <img src="assets/icons/brand.svg" alt="Cantinho Oriental" />
           </a>
@@ -50,26 +52,28 @@
         </div>
       </header>
 
-      <main>
+      <main class="flex-container direction-column">
         <article id="home">
-          <section class="container">
-            <div class="text-content">
-              <div class="title title-first-variation">
+          <section class="container flex-container justify-space-between">
+            <div class="text-content flex-container direction-column">
+              <div
+                class="title title-first-variation flex-container direction-column gap-1"
+              >
                 <h1>Desfrute do nosso delicioso Sushi!</h1>
 
-                <div>
+                <div class="flex-container items-center gap-2">
                   <img src="assets/img/home-sushi-title.png" alt="" />
                   <h3>Sushi Food</h3>
                 </div>
               </div>
 
-              <div class="description">
+              <div class="flex-container direction-column gap-1">
                 <p>
                   Desfrute de um bom jantar com o melhor prato do nosso
                   restaurante e melhore o seu dia.
                 </p>
 
-                <button>
+                <button class="flex-container items-center">
                   <a href="">Peça Agora</a>
                   <svg
                     width="20"
@@ -94,18 +98,18 @@
         </article>
 
         <article id="about">
-          <section class="container">
-            <div class="text-content">
+          <section class="container flex-container justify-space-between">
+            <div class="text-content flex-container direction-column gap-2">
               <div class="title title-second-variation">
                 <h1>Sobre a nossa empresa</h1>
 
-                <div>
+                <div class="flex-container items-center">
                   <h3>Promovemos uma dieta equilibrada</h3>
                   <img src="assets/img/about-sushi-title.png" alt="" />
                 </div>
               </div>
 
-              <div class="description">
+              <div>
                 <p>
                   A origem da nossa comida está enraizada em nossos ancestrais,
                   seja voando nos céus ou enraizados na terra. Valorizamos a
